@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>i Care</title>
+    <link href="http://www.incident.co.in/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="http://www.incident.co.in/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="css/main.css" media="all" />
+    <link rel="stylesheet" href="css/animations.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "pic1.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "pic2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "pic3.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "pic4.jpg"
+slideimages[4] = new Image()
+slideimages[4].src = "pic5.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "pic6.jpg"
+slideimages[6] = new Image()
+slideimages[6].src = "pic7.jpg"
+slideimages[7] = new Image()
+slideimages[7].src = "pic8.jpg"
+slideimages[8] = new Image()
+slideimages[8].src = "pic9.jpg"
+slideimages[9] = new Image()
+slideimages[9].src = "pic10.jpg"
+slideimages[10] = new Image()
+slideimages[10].src = "pic11.jpg"
+slideimages[11] = new Image()
+slideimages[11].src = "pic12.jpg"
+
+</script>
+
+</head>
+<body style="background-image:url(Change_BG.jpg)">
+<div class="container">
+<h1 style="color:white" align="center">i-Care</h1>
+						<p align="center" style="color:white">		
+I-Care, the social event of Incident, was first organised in 2011 by an enthusiastic group of 
+
+people who wished to inculcate humanitarian ideals among the student fraternity. Since its 
+
+inception it has become bigger and better every year due to the commitment and dedication 
+
+shown by an ever increasing number of altruistic volunteers.<br>
+
+We organise two major events, one being the I-Care Day and the other, Street Plays.<br>
+
+I-Care day is a full day event, where kids from orphanages spend a whole day in college 
+
+engaged in various events organised. We aim on making it a fun cum learning experience by 
+
+conducting a Sherlock Holmes event. It will be a treasure hunt based on clues which will lead 
+
+to solving a mystery. This will take them to different parts of the campus where we will be 
+
+explaining to them about the departments, functioning of CCC, ATM, etc. Lunch will be 
+
+provided to them. Further into the day we have planned a T-Shirt painting workshop for them 
+
+by the Artist Forum. The T-Shirts will be given to them at the end of the day along with 
+
+mementos for participation.<br>
+
+The street plays on burning topics of the country are performed to bring in awareness among
+
+the students to make this society a better place to live. Last year, the play was about Women 
+
+Harassment which received a wonderful response from the students as well as the media. 
+
+This time we plan to work on Swachh Bharat, to create awareness about cleanliness. The 
+
+street plays will be performed at the beach in the evening, during the fest.<br>
+
+Highlight of this I-Care will be a performance by the specially-abled kids from the Lions 
+
+Club School, Surathkal. They will be performing during Promenade, the dance competition 
+
+of the fest.<br></p>
+<p style="color:white">
+
+<br><b>If you wish to volunteer for I-Care, contact:
+
+<br>Puneetha K
+
+<br>+91 9481606308</b></p>
+
+<img src="pic1.jpg" id="slide" width="340px" />
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<11)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+</div>
+</body>
+</html>

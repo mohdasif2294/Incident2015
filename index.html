@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Incident 2015</title>
+    <link href="http://www.incident.co.in/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="http://www.incident.co.in/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="css/main.css" media="all" />
+    <link rel="stylesheet" href="css/animations.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+      <script src="http://connect.facebook.net/en_US/all.js"></script>
+    
+    <script>
+		<!--Ajax loading-->
+			$(document).ready(function () {
+				$('.left_bar > a').click(function (e) {
+					e.preventDefault();
+					$('.left_bar > a').removeClass('active');
+					$(this).addClass('active');                
+				});  
+
+				$(".list-group-item,.nav-tabs a").on("click",function(){
+					//alert("1");
+					$(".center_content,.content").html("<div style='text-align:center'><img src='img/loading.gif'/></div>");
+					//alert("2");
+				});                  
+			});
+
+			
+			
+
+			$(document).ready(function(){
+				$(".encore").click(function(){
+					$(".center_content").load("events/proNites/encore.html");
+				});
+				$(".easternNite").click(function(){
+					$(".center_content").load("events/proNites/easternNite.html");
+				});
+				$(".westernNite").click(function(){
+					$(".center_content").load("events/proNites/westernNite.html");
+				});
+				$(".crossfade").click(function(){
+					$(".center_content").load("events/proNites/crossfade.html");
+				});
+
+				$(".dance").click(function(){
+					$(".center_content").load("events/events/dance.html");
+				});
+				$(".music").click(function(){
+					$(".center_content").load("events/events/music.html");
+				});
+				$(".literature").click(function(){
+					$(".center_content").load("events/events/literature.html");
+				});
+				$(".sports").click(function(){
+					$(".center_content").load("events/events/sports.html");
+				});
+				$(".haute").click(function(){
+					$(".center_content").load("events/events/fashion.html");
+				});
+				$(".gaming").click(function(){
+					$(".center_content").load("events/events/gaming.html");
+				});
+				$(".fineArts").click(function(){
+					$(".center_content").load("events/events/fineArts.html");
+				});
+				$(".streetPlay").click(function(){
+					$(".center_content").load("events/events/streetPlay.html");
+				});
+
+				$(".expose").click(function(){
+					$(".center_content").load("events/inciSpecials/expose.html");
+				});
+				$(".holi").click(function(){
+					$(".center_content").load("events/inciSpecials/holi.html");
+				});
+				$(".ghantaAwards").click(function(){
+					$(".center_content").load("events/inciSpecials/ghantaAwards.html");
+				});
+				$(".kalakriti").click(function(){
+					$(".center_content").load("events/inciSpecials/kalakriti.html");
+				});
+				$(".kiteFest").click(function(){
+					$(".center_content").load("events/inciSpecials/kiteFest.html");
+				});
+				$(".hogathon").click(function(){
+					$(".center_content").load("events/inciSpecials/hogathon.html");
+				});
+				$(".beachEvents").click(function(){
+					$(".center_content").load("events/inciSpecials/beachEvents.html");
+				});
+	       
+	$('.forensics').click(function (e) {
+		e.preventDefault()
+		$(".center_content").load("events/workshops/forensics.html");
+	});
+	$('.salsa').click(function (e) {
+		e.preventDefault()
+		$(".center_content").load("events/workshops/salsa.html");
+	});
+	$('.airplane').click(function (e) {
+		e.preventDefault()
+		$(".center_content").load("events/workshops/poetry.html");
+	});
+	$('.shortfilm').click(function (e) {
+		e.preventDefault()
+		$(".center_content").load("events/workshops/shortfilm.html");
+	});
+        $('.bhangra').click(function (e) {
+		e.preventDefault()
+		$(".center_content").load("events/workshops/bhangra.html");
+	});
+        $('.belly').click(function (e) {
+		e.preventDefault()
+		$(".center_content").load("events/workshops/belly.html");
+	});
+   
+
+				$(".worldFest").click(function(){
+					$(".center_content").load("events/worldFest/worldFest.html");
+				});
+				$(".adventureSports").click(function(){
+					$(".center_content").load("events/informalz/adventureSports.html");
+				});
+                $(".colourHunt").click(function(){
+					$(".center_content").load("events/informalz/color.html");
+				});
+                 $(".roadie").click(function(){
+					$(".center_content").load("events/informalz/roadie.html");
+				});
+                 $(".MrNMrs").click(function(){
+					$(".center_content").load("events/informalz/informalz.html");
+				});
+				$(".poolSplash").click(function(){
+					$(".center_content").load("events/informalz/poolSplash.html");
+				});
+				$(".streets").click(function(){
+					$(".center_content").load("events/informalz/streets.html");
+				});
+
+				$(".workshops").click(function(){
+					$(".center_content").load("events/workshops/workshop.html");
+				});
+
+	$('.sonya').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/sonya.html");
+	});
+	$('.boogie').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/boogie.html");
+	});
+       $('.neptune').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/neptune.html");
+	});
+        $('.band').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/band.html");
+	});
+        $('.paolo').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/paolo.html");
+	});
+
+
+				$(".md-trigger").click(function(){
+					$('.left_bar > a').removeClass('active');
+					var t = this.getAttribute("id");
+					switch(t)
+					{
+						case "events":
+							$(".center_content,.content").load("events/writeUps/events.html");
+							break;
+						case "pronites":
+							$(".center_content,.content").load("events/writeUps/proNites.html");
+							break;
+						case "informals":
+							$(".center_content,.content").load("events/writeUps/informalz.html");
+							break;
+						case "workshops":
+							$(".center_content,.content").load("events/writeUps/workshops.html");
+							break;
+						case "inci-specials":
+							$(".center_content,.content").load("events/writeUps/inciSpecials.html");
+							break;
+						case "world-fest":
+							$(".center_content,.content").load("events/writeUps/Worldfests.html");
+							break;
+						case "hospitality":
+							$(".center_content,.content").load("events/writeUps/hospitality.html");
+							break;
+					}
+				});
+
+			});
+
+		</script>
+    <script>
+
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+
+  $(document).ready(function(){
+    var msg = getParameterByName("reg_message");
+    if( msg.length > 1 )
+    {
+      $("#reg_message_div").css("display","block");
+      $("#reg_message").text(msg);
+    }
+  });
+
+  window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '779354138753018', // Set YOUR APP ID
+        channelUrl : 'http://incident.co.in/fbtest', // Channel File
+        status     : true, // check login status
+        cookie     : true, // enable cookies to allow the server to access the session
+        xfbml      : true  // parse XFBML
+      });
+ 
+        FB.Event.subscribe('auth.authResponseChange', function(response)
+        {
+          if (response.status === 'connected')
+          {
+            //document.getElementById("message").innerHTML +=  "<br>Connected to Facebook";//SUCCESS
+          }   
+          else if (response.status === 'not_authorized')
+          {
+            //document.getElementById("message").innerHTML +=  "<br>Failed to Connect";//FAILED
+          } 
+          else
+          {
+            //document.getElementById("message").innerHTML +=  "<br>Logged Out"; //UNKNOWN ERROR
+          }
+      });
+    };
+ 
+    function Login()
+    {
+	fbAsyncInit();
+        FB.login(function(response) {
+           if (response.authResponse)
+            {
+                getUserInfo();
+            } 
+            else
+            {
+             console.log('User cancelled login or did not fully authorize.');
+            }
+         },{scope: 'email'});
+    }
+ 
+    function getUserInfo() {
+        FB.api('/me', function(response) {
+ 
+      var str="<b>Name</b> : "+response.name+"<br>";
+          str +="<b>Link: </b>"+response.link+"<br>";
+          str +="<b>Username:</b> "+response.username+"<br>";
+          str +="<b>id: </b>"+response.id+"<br>";
+          str +="<b>Email:</b> "+response.email+"<br>";
+          str +="<input type='button' value='Logout' onclick='Logout();'/>";
+          //document.getElementById("status").innerHTML=str;
+
+          
+
+          $("#fullname_form").val(response.name) ;
+          $("#email_id_form").val(response.email);
+          $("#facebook_id_form").val(response.id) ;
+
+      
+      
+
+       $('#regform_modal').modal('show');
+ 
+    });
+    }
+    
+
+    function Logout()
+    {
+        FB.logout(function(){document.location.reload();});
+    }
+ 
+  // Load the SDK asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document)); 
+</script>
+</head>
+
+
+<body>
+    		<div class="md-modal md-effect-13" id="modal-pronights" style="height:100%; overflow:auto;">
+			<div class="md-content">
+				<h3>Pronites</h3>
+				<div class="container-fluid">
+				<div class="row">
+				<!--left Sidebar-->
+					<div class="left_bar col-md-2">
+						<a href="#" class="list-group-item encore">Encore / Vishal-Shekar</a>
+						<a href="#" class="list-group-item easternNite">Eastern Night - Coshish</a>
+						<a href="#" class="list-group-item westernNite" >Western Night - Thermal And A Quarter(TAAQ)</a>
+						<a href="#" class="list-group-item crossfade" >Crossfade - DJ A Sen & DJ MightyFools</a>
+					</div>
+					<div class="col-md-9 center_content">
+						<h2 class="content-title">Pro Nites</h2>
+						<p>Awaken the party animal in you at the EDM night. Catch and unforgettable music at Eastern nights. Western nights for the Rock 'n' Roll aficionado. Over the years we've had big names from Bollywood enthrall at Encore, get ready for a perfect finale</p>
+					</div>				
+				</div>
+				</div>
+				<button class="md-close">Close</button>
+			</div>
+		</div>
+
+		<div class="md-modal md-effect-13" id="modal-events" style="height:100%; overflow:auto;">
+			<div class="md-content">
+				<h3>Events</h3>
+				<div class="container-fluid">
+				<div class="row">
+				<!--left Sidebar-->
+					<div class="left_bar col-md-2">
+						<a href="#" class="list-group-item music">Music</a>
+						<a href="#" class="list-group-item dance">Dance</a>
+						<a href="#" class="list-group-item sports">Sports</a>
+						<a href="#" class="list-group-item literature">Literary</a>
+						<a href="#" class="list-group-item haute">Fashion</a>
+						<a href="#" class="list-group-item gaming">Gaming</a>
+						<a href="#" class="list-group-item fineArts">Fine Arts</a>
+						<a href="#" class="list-group-item streetPlay">Street Play</a>
+					</div>
+					<div class="col-md-9 center_content">
+						<h2 class="content-title">Events write up</h2>
+					</div>				
+				</div>
+				</div>
+				<button class="md-close">Close</button>
+			</div>
+		</div>
+
+		<div class="md-modal md-effect-13" id="modal-workshops" style="height:100%; overflow:auto;">
+			<div class="md-content">
+				<h3>Workshops</h3>
+				<div class="container-fluid">
+				<div class="row">
+				<!--left Sidebar-->
+					<div class="left_bar col-md-2">
+						<a href="#" class="list-group-item forensics">Forensics</a>
+						<a href="#" class="list-group-item salsa">Salsa</a>
+						<a href="#" class="list-group-item shortfilm">Short Film Making </a>
+						<a href="#" class="list-group-item airplane">Airplane Poetry</a>
+						<a href="#" class="list-group-item bhangra">Bhangra</a>
+       					<a href="#" class="list-group-item belly">Belly Dance</a>
+					</div>
+					<div class="col-md-9 center_content">
+					<h1>Workshops</h1>
+<p>All fun and games aside, want to train in a new trade or try out the unconventional? Take a look at the variety of exciting workshops Incident has to offer. Give your creativity free reign through our exciting & quirky workshops like origami and caricature drawing, sharpen your cooking skills while you indulge your sweet tooth in the chocolate making workshop and be prepared to amaze everyone on the dance floor by learning exotic, sexy dance forms like the Salsa, this Incident.</p>
+<p>Date : 05 - 08 March</p> 
+
+					</div>				
+				</div>
+				</div>
+				<button class="md-close">Close</button>
+			</div>
+		</div>
+
+		<div class="md-modal md-effect-13" id="modal-worldFest" style="height:100%; overflow:auto;">
+			<div class="md-content">
+				<h3>World Fest</h3>
+				<div class="container-fluid">
+				<div class="row">
+				<!--left Sidebar-->
+					<div class="left_bar col-md-2">
+						<a href="#" class="list-group-item sonya">Sonya Nakti</a>
+						<a href="#" class="list-group-item boogie">Mauricio Boogieloop</a>
+						<a href="#" class="list-group-item neptune">Neptune Unicyclist</a>
+						<a href="#" class="list-group-item band">Musical Band Alchimix/Atma</a>
+                        <a href="#" class="list-group-item band paolo">Paolo Tofani</a>
+					</div>
+					<div class="col-md-9 center_content">
+						<h1>World Fest</h1>
+						<p>
+	World Fest- After making its debut in the previous edition, World Fest this year promises performances that are going to take you on a journey around the globe. Roy Zaltsman, The Turbans, Banana Show were the major attractions last year and is something you just can’t miss this Incident.<br>
+This time, we bring you some more amazing artists from around the globe!
+</p>
+					</div>				
+				</div>
+				</div>
+				<button class="md-close">Close</button>
+			</div>
+		</div>
+
+		<div class="md-modal md-effect-13" id="modal-inciSpecials" style="height:100%; overflow:auto;">
+			<div class="md-content">
+				<h3>Inci Specials</h3>
+				<div class="container-fluid">
+				<div class="row">
+				<!--left Sidebar-->
+					<div class="left_bar col-md-2">
+						<a href="#" class="list-group-item expose">Expose</a>
+						<a href="#" class="list-group-item ghantaAwards">Ghanta Awards</a>
+						<a href="#" class="list-group-item hogathon">Hogathon</a>
+						<a href="#" class="list-group-item holi">Holi</a>
+						<a href="#" class="list-group-item kalakriti">Kalakriti</a>
+						<a href="#" class="list-group-item kiteFest">Kite Fest</a>
+						<a href="#" class="list-group-item beachEvents">Beach Events</a>
+					</div>
+					<div class="col-md-9 center_content">
+						<h2 class="content-title">Inci Specials write up</h2>
+					</div>				
+				</div>
+				</div>
+				<button class="md-close">Close</button>
+			</div>
+		</div>
+		
+		<div class="md-modal md-effect-13" id="modal-hospitality" style="height:100%; overflow:auto;">
+			<div class="md-content">
+				<h3>Hospitality</h3>
+				<div class="container-fluid">
+				<div class="row">
+				<!--left Sidebar-->
+					
+					<div class="col-md-9 center_content">
+						<h2 class="content-title">Hospitality</h2>
+						<p>		
+At the end of a euphoric, fun-filled day, our Hospitality Committee promises you warm and comfortable accommodation that will leave you energized & enthused for the next days’ events. We offer you rooms on campus with basic amenities & security – and at half the price of any off-campus accommodation you will find!     
+<br/>
+So be lulled to sleep by the sound of the waves and stay as close to the action as possible by registering your institute contingent for on-campus accommodation.
+<br/>
+We look forward to ensuring your stay here is pleasant and enjoyable!      
+<br/>
+<a class="btn btn-default"  href = 'https://docs.google.com/forms/d/1BQyacp24j1AspZzrHzbERnc-fjlbMujv2TxTSWjJUXI/viewform'> Register for accomodation</a>
+
+
+						</p>
+					</div>				
+				</div>
+				</div>
+				<button class="md-close">Close</button>
+			</div>
+		</div>
+		
+
+		<div class="md-modal md-effect-13" id="modal-informalz" style="height:100%; overflow:auto;">
+			<div class="md-content">
+				<h3>Informalz</h3>
+				<div class="container-fluid">
+				<div class="row">
+				<!--left Sidebar-->
+					<div class="left_bar col-md-2">
+						<a href="#" class="list-group-item adventureSports">Adventure Sports</a>
+						<a href="#" class="list-group-item poolSplash">Pool Splash</a>
+						<a href="#" class="list-group-item streets">Streets</a>
+                                                <a href="#" class="list-group-item roadie">Roadies</a>
+                                                <a href="#" class="list-group-item colourHunt">Colour Hunt</a>
+                                                <a href="#" class="list-group-item MrNMrs">Mr. and Mrs. Informalz</a>
+					</div>
+					<div class="col-md-9 center_content">
+						<h2 class="content-title">Informals write up</h2>
+					</div>				
+				</div>
+				</div>
+				<button class="md-close">Close</button>
+			</div>
+		</div>
+    
+    
+    
+
+
+
+
+
+    <div id="content">
+        <div class="container-fluid" id="header">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/nitk.png" />
+                </div>
+                <div class="col-md-2"></div>
+
+                <div class="col-md-6 last"> <a style="text-decoration:none" target="_blank" href="/schedule/"><span style="color:rgb(238, 238, 238);cursor:pointer;"> Schedule </a> &nbsp; &nbsp;<a style="text-decoration:none" target="_blank" href="/icare/"><span style="color:rgb(238, 238, 238);cursor:pointer;"> i-Care </a> &nbsp; &nbsp;<span onclick="Login()"> Register </span> &nbsp; &nbsp; <a href="#hospitality" id="hospitality" title="Hospitality" class="md-trigger " data-modal="modal-hospitality" style = "text-decoration:none; color:rgb(238,238,238);">Hospitality</a>&nbsp; &nbsp;<a style="text-decoration:none" href="/ca_inci" target="_blank"><span style="color:rgb(238, 238, 238);">CA&nbsp; &nbsp;</span></a>  <a style="text-decoration:none" href="/sponsors" target="_blank"><span style="color:rgb(238, 238, 238);">Sponsors&nbsp; &nbsp;</span></a> <a style="text-decoration:none" href="/inciblog" target="_blank"><span style="color:rgb(238, 238, 238);">Blog &nbsp; &nbsp;</span></a> <a style="text-decoration:none" href="/contact"><span style="color:rgb(238, 238, 238);">Contact </span></a></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-wrapper">
+
+
+            <ul class="hexnav" role="navigation">
+                <li class="hexnav-item-center fade fade-50" data-opacity="1"></li>
+                <li class="hover hexnav-item-1 fade fade-60" data-opacity="0.6">
+                    <a href="#pronites" id="pronites" title="Pronites" class="md-trigger " data-modal="modal-pronights" ></a>
+                </li>
+                <li class="hover hexnav-item-2 fade fade-60" data-opacity="0.6">
+                    <a href="#events" id="events" title="Events" class="md-trigger" data-modal="modal-events" ></a>
+                </li>
+                <li class="hover hexnav-item-3 fade fade-60" data-opacity="0.6">
+                    <a href="#informals" id="informals" title=""  class="md-trigger " data-modal="modal-informalz"></a>
+                </li>
+                <li class="hover hexnav-item-4 fade fade-60" data-opacity="0.6">
+                    <a href="#world-fest" id="world-fest" title="" class="md-trigger " data-modal="modal-worldFest"></a>
+                </li>
+                <li class="hover hexnav-item-5 fade fade-60" data-opacity="0.6">
+                    <a href="#workshops" id="workshops" title="" class="md-trigger" data-modal="modal-workshops"></a>
+                </li>    <li class="hover hexnav-item-6 fade fade-60" data-opacity="0.6">
+                    <a href="#inci-specials" id="inci-specials" title="" class="md-trigger " data-modal="modal-inciSpecials"></a>
+                </li>
+            </ul>
+                
+        </div>
+<div>
+<a class="twitter-timeline"  float="left" width="250" top="300"
+  height="550" href="https://twitter.com/incident_nitk" data-widget-id="573386253086826496">Tweets by @incident_nitk</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+             
+        <div class="container-fluid" id="footer-1">
+            <div class="row">
+                <div class="col-md-3"><a style= "font-weight:600;color:#EFE;"href="http://in.bookmyshow.com/events/encore-vishal-shekhar-live/ET00028674">Click here to book tickets for Encore: Vishal Shekar LIVE!</a> </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-4 right-align">
+                    <a href = "https://www.facebook.com/incidenttheofficialpage" ><img src="img/facebook.png" class="social" /></a>
+                    <a href= "https://www.twitter.com/incident_nitk"><img src="img/twitter.png" class="social" /></a>
+                    <a href="https://www.youtube.com/user/nitkincident"><img src="img/youtube.png" class="social" /></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="background"></div>
+<div class="md-overlay"></div>
+
+
+<div id="regform_modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Register</h4>
+            </div>   
+            <div class="modal-body">
+              <form method="post" action ="http://incident.co.in/save_user.php" id="reg_form">
+                <table>
+                  <tr>
+                    <td>
+                      Fullname
+                    </td>
+                    <td>
+                      <input type="text" name="fullname" id="fullname_form" required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Email Id
+                    </td>
+                    <td>
+                      <input type="text" name="email_id" id="email_id_form" required>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Phone no
+                    </td>
+                    <td>
+                      <input type="text" name="phone_no" id="phone_no_form" required>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      College name
+                    </td>
+                    <td>
+                      <input type="text" name="college_name" id="college_name_form" required>
+                    </td>
+                  </tr>
+                </table>
+                <input type="hidden" name="facebook_id" id="facebook_id_form" value="" >
+                <br/>
+                <input type="submit" class="btn btn-info" id="register_button" value="Register">
+              </form>
+              
+              <div>
+                <p id="registration_reply_message"></p>
+              </div>
+                    
+               
+<!--
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+-->
+        </div> 
+    </div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+  //ajax form submission
+  /*$("#reg_form").submit( function(event) {
+      event.preventDefault();
+      alert("form submitted");
+      var $form = $( this ),
+          url = $form.attr( 'action' );
+          alert(url);
+      var posting = $.post( url, { fullname: $('#fullname_form').val(), email_id: $('#email_id_form').val(), college_name: $('#college_name_form').val(), phone_no: $('#phone_no_form').val, facebook_id: $('#facebook_id_form').val  }, function(data){ alert(data); } );
+
+      
+      posting.done(function( data ) {
+        alert(data);
+        $("#registration_reply_message").text(data);
+      });
+
+      posting.fail(function(data){
+        alert(data);
+      })
+
+    }); */
+</script>
+
+
+</body>
+<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+<script type="text/javascript">
+    var i = 0;
+    var j = 0;
+    $().ready(function () {
+        var interval = setInterval(rotate, 200);
+    });
+
+    function rotate() {
+        $("#background").css("filter", "hue-rotate(" + i + "deg) saturate(" + j + ") ");
+        $("#background").css("webkit-filter", "hue-rotate(" + i + "deg) saturate(" + j + ") ");
+        i <= 360 ? i += 5 : i = 0;
+        j < 1 ? j += 0.05 : 1;
+    }
+    
+    $(document).ready(function(){
+		
+		var queryDict = {}
+location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
+		
+		if(queryDict["message"] == "Success")
+		{
+			inciID  = 
+			alert("Congratulations, you have successfully registered. Your Incident ID is " + queryDict["ID"] +". Your Incident ID is required to register on all Incident events, please take note.");
+		}
+		else if(queryDict["message"] == "Error")
+		{
+			alert("An unknown error occured, please contact avinash@incident.co.in for assistance.");
+		}
+		else if(queryDict["message"] == "Exists")
+		{
+			alert("Your user ID already exists. Your ID is:" + queryDict["ID"]);
+		}
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				var url = window.location.href.slice(window.location.href.indexOf('#') + 1).split('#');
+  				if( url.length != 0 )
+  				{
+ 	 				var permalink = url.pop();
+ 	 				//alert(permalink);
+ 	 				switch( permalink )
+ 	 				{
+ 	 					case "events":
+ 	 						$("#events").click();
+ 	 						break;
+			 	 		case "workshops":
+			 	 			$("#workshops").trigger('click');
+			 	 			break;
+			 	 		case "informals":
+ 	 						$("a#informals").trigger('click');
+ 	 						break;
+			 	 		case "inci-specials":
+			 	 			$("a#inci-specials").trigger('click');
+			 	 			break;
+			 	 		case "world-fest":
+ 	 						$("a#world-fest").trigger('click');
+	 						break;
+			 	 		case "pronites":
+			 	 			$("a#pronites").trigger('click');
+			 	 			break;
+ 	 					default:
+ 	 				}
+  				}
+			});
+</script>
+
+</html>

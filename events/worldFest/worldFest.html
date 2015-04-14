@@ -1,0 +1,40 @@
+<script>
+	$('.sonya a').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/sonya.html");
+	});
+	$('.boogie a').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/boogie.html");
+	});
+       $('.neptune a').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/neptune.html");
+	});
+        $('.band a').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/band.html");
+	});
+            $('.paolo a').click(function (e) {
+		e.preventDefault();
+		$(".center_content").load("events/worldFest/paolo.html");
+	});
+</script>
+
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+
+<div class="worldFest">
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+				<li class="sonya"><a href="#">Sonya Nakti</a></li>
+                <li class="boogie"><a href="#">Mauricio Boogieloop</a></li>
+                <li class="neptune"><a href="#">Neptune Unicyclist</a></li>
+                <li class="band"><a href="#">Musical Band Alchemist</a></li>
+                <li class="paolo"><a href="#">Paolo Tofani</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>

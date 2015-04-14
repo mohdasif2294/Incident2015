@@ -1,0 +1,42 @@
+<script>
+	$(".content").load("events/events/dance/promenade.html");
+	$('.promenade a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/events/dance/promenade.html");
+	})
+	$('.thematic a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/events/dance/thematic.html");
+	})
+	$('.tandav a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/events/dance/tandav.html");
+	})
+	$('.solo a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/events/dance/solo.html");
+	})
+	$('.duet a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/events/dance/duet.html");
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="danceEvents">
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="promenade"><a href="#">Promenade</a></li>
+		<li class="thematic"><a href="#">Thematic</a></li>
+		<li class="tandav"><a href="#">Thandav</a></li>
+		<li class="solo"><a href="#">Solo</a></li>
+		<li class="duet"><a href="#">Duet</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>
+<p><b>Any queries? Contact</b><br>
+Allan Menezes<br>
++91 9980731295</p>

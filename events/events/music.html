@@ -1,0 +1,55 @@
+<script>
+	$(".content").load("events/events/music/acapella.html")
+	$('.acapella a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/music/acapella.html")
+	})
+	$('.bandish a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/music/bandish.html")
+	})
+        $('.raagalaya a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/music/raagalaya.html")
+	})
+	$('.dwanic a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/music/dwanic.html")
+	})
+	$('.leadingNote a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/music/leadingNotes.html")
+	})
+	$('.pulse a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/music/pulse.html")
+	})
+	$('.unplugged a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/music/unplugged.html")
+	})
+	$('.warOfDjs a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/music/warOfDjs.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="musicEvents">
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="acapella"><a href="#">Acapella</a></li>
+                <li class="raagalaya"><a href="#">Raagalaya</a></li>
+		<li class="bandish"><a href="#">Bandish</a></li>
+		<li class="dwanic"><a href="#">Dwanik</a></li>
+		<li class="leadingNote"><a href="#">Leading Note</a></li>
+		<li class="pulse"><a href="#">Pulse</a></li>
+		<li class="unplugged"><a href="#">Unplugged</a></li>
+		<li class="warOfDjs"><a href="#">War of DJs</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>
+

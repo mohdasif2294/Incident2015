@@ -1,0 +1,37 @@
+<script>
+	$(".content").load("events/events/gaming/cs.html")
+	$('.cs a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/gaming/cs.html")
+	})
+	$('.dota a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/gaming/dota.html")
+	})
+	$('.fifa a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/gaming/fifa.html")
+	})
+	$('.nfs a').click(function (e) {
+		e.preventDefault()
+		$(".content").load("events/events/gaming/nfs.html")
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="litraryEvents">
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="cs"><a href="#">CS1.6</a></li>
+		<li class="dota"><a href="#">DOTA 2</a></li>
+		<li class="fifa"><a href="#">FIFA</a></li>
+		<li class="nfs"><a href="#">NFS</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>
+<p><b>Regarding any queries, Contact</b><br>
+      Harsha Vardhan R<br>
+      +91-8147803595</p>

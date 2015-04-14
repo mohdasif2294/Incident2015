@@ -1,0 +1,27 @@
+<script>
+	$(".content").load("events/inciSpecials/beachEvents/beachInformalz.html");
+	$('.beachInformalz a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/inciSpecials/beachEvents/beachInformalz.html");
+	})
+	$('.waterSports a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/inciSpecials/beachEvents/waterSports.html");
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="danceEvents">
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="beachInformalz"><a href="#">Beach Informalz</a></li>
+		<li class="waterSports"><a href="#">Water Sports</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>
+<p><b>Any queries? Contact</b><br>
+    Saket Bajpayee<br>
+    +91 7795235931</p>

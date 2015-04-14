@@ -1,0 +1,29 @@
+<script>
+	$(".content").load("events/events/sports/slamDunk.html");
+	$('.slamDunk a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/events/sports/slamDunk.html");
+	})
+	$('.score a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/events/sports/score.html");
+	})
+        $('.spike a').click(function (e) {
+		e.preventDefault();
+		$(".content").load("events/events/sports/spike.html");
+	})
+</script>
+<style type="text/css">
+	.bar_nav>li>a{
+		padding: 20px 24px 10px 10px;
+	}
+</style>
+<div class="sportsEvents">
+	<ul class="nav nav-tabs bar_nav" role="tablist">
+		<li class="slamDunk"><a href="#">Slam Dunk</a></li>
+		<li class="score"><a href="#">Futsal</a></li>
+        <li class="spike"><a href="#">Spike Fest</a></li>
+	</ul>
+	<div class="content">
+	</div>
+</div>
